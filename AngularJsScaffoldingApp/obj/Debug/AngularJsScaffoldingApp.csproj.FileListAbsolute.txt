@@ -7,3 +7,4 @@ D:\san\AngularJsScaffoldingApp\AngularJsScaffoldingApp\obj\Debug\AngularJsScaffo
 D:\san\AngularJsScaffoldingApp\AngularJsScaffoldingApp\obj\Debug\AngularJsScaffoldingApp.csproj.GenerateResource.Cache
 D:\san\AngularJsScaffoldingApp\AngularJsScaffoldingApp\obj\Debug\AngularJsScaffoldingApp.exe
 D:\san\AngularJsScaffoldingApp\AngularJsScaffoldingApp\obj\Debug\AngularJsScaffoldingApp.pdb
+D:\san\AngularJsScaffoldingApp\AngularJsScaffoldingApp\obj\Debug\AngularJsScaffoldingApp.Form1.resources
