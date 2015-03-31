@@ -24,6 +24,13 @@ namespace AngularJsScaffoldingApp
             CreateProjectPathIfNotExists();
 
             CreateIndexFile();
+
+            CreateFolderStructure();
+        }
+
+        private void CreateFolderStructure()
+        {
+            throw new NotImplementedException();
         }
 
         private void CreateIndexFile()
