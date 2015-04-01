@@ -2,9 +2,9 @@ D:\san\AngularJsScaffoldingApp\AngularJsScaffoldingApp\AngularJsScaffoldingApp\b
 D:\san\AngularJsScaffoldingApp\AngularJsScaffoldingApp\bin\Debug\AngularJsScaffoldingApp.exe.config
 D:\san\AngularJsScaffoldingApp\AngularJsScaffoldingApp\bin\Debug\AngularJsScaffoldingApp.exe
 D:\san\AngularJsScaffoldingApp\AngularJsScaffoldingApp\bin\Debug\AngularJsScaffoldingApp.pdb
-D:\san\AngularJsScaffoldingApp\AngularJsScaffoldingApp\obj\Debug\AngularJsScaffoldingApp.csprojResolveAssemblyReference.cache
-D:\san\AngularJsScaffoldingApp\AngularJsScaffoldingApp\obj\Debug\AngularJsScaffoldingApp.Form1.resources
 D:\san\AngularJsScaffoldingApp\AngularJsScaffoldingApp\obj\Debug\AngularJsScaffoldingApp.Properties.Resources.resources
 D:\san\AngularJsScaffoldingApp\AngularJsScaffoldingApp\obj\Debug\AngularJsScaffoldingApp.csproj.GenerateResource.Cache
 D:\san\AngularJsScaffoldingApp\AngularJsScaffoldingApp\obj\Debug\AngularJsScaffoldingApp.exe
 D:\san\AngularJsScaffoldingApp\AngularJsScaffoldingApp\obj\Debug\AngularJsScaffoldingApp.pdb
+D:\san\AngularJsScaffoldingApp\AngularJsScaffoldingApp\obj\Debug\AngularJsScaffoldingApp.csprojResolveAssemblyReference.cache
+D:\san\AngularJsScaffoldingApp\AngularJsScaffoldingApp\obj\Debug\AngularJsScaffoldingApp.ScaffoldAngularJsApp.resources
