@@ -35,11 +35,11 @@
             // 
             // btnScaffold
             // 
-            this.btnScaffold.Location = new System.Drawing.Point(222, 299);
+            this.btnScaffold.Location = new System.Drawing.Point(222, 248);
             this.btnScaffold.Name = "btnScaffold";
-            this.btnScaffold.Size = new System.Drawing.Size(75, 23);
+            this.btnScaffold.Size = new System.Drawing.Size(124, 38);
             this.btnScaffold.TabIndex = 0;
-            this.btnScaffold.Text = "Scaffold";
+            this.btnScaffold.Text = "Create New Website";
             this.btnScaffold.UseVisualStyleBackColor = true;
             this.btnScaffold.Click += new System.EventHandler(this.btnScaffold_Click);
             // 
@@ -49,6 +49,7 @@
             this.txtProjectPath.Name = "txtProjectPath";
             this.txtProjectPath.Size = new System.Drawing.Size(245, 20);
             this.txtProjectPath.TabIndex = 1;
+            this.txtProjectPath.Text = "D:\\san\\testtemp";
             // 
             // lblProjectPath
             // 

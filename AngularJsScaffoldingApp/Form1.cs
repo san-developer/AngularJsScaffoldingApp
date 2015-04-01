@@ -23,38 +23,53 @@ namespace AngularJsScaffoldingApp
         {
             CreateProjectPathIfNotExists();
 
-            CreateIndexFile();
-
             CreateFolderStructure();
+
+            MessageBox.Show("Great!");
         }
 
         private void CreateFolderStructure()
         {
-            throw new NotImplementedException();
+            DirectoryCopy(Path.Combine(Path.GetDirectoryName(Application.ExecutablePath), "template"), ProjectPath, true);
+
         }
 
-        private void CreateIndexFile()
+        private void DirectoryCopy(string sourceDirName, string destDirName, bool copySubDirs)
         {
-            File.AppendAllText(Path.Combine(ProjectPath, "index.html"), @"<!doctype html>
-<html ng-app>
-  <head>
-    <script src='http://ajax.googleapis.com/ajax/libs/angularjs/1.0.5/angular.min.js'></script>
-    <script src='script.js'></script>
+            // Get the subdirectories for the specified directory.
+            DirectoryInfo dir = new DirectoryInfo(sourceDirName);
+            DirectoryInfo[] dirs = dir.GetDirectories();
 
-  </head>
-  <body>
+            if (!dir.Exists)
+            {
+                throw new DirectoryNotFoundException(
+                    "Source directory does not exist or could not be found: "
+                    + sourceDirName);
+            }
 
-<div>
-  
-  </div>
-  
-</div>
+            // If the destination directory doesn't exist, create it. 
+            if (!Directory.Exists(destDirName))
+            {
+                Directory.CreateDirectory(destDirName);
+            }
 
+            // Get the files in the directory and copy them to the new location.
+            FileInfo[] files = dir.GetFiles();
+            foreach (FileInfo file in files)
+            {
+                string temppath = Path.Combine(destDirName, file.Name);
+                file.CopyTo(temppath, true);
+            }
 
-
-  </body>
-</html>
-");
+            // If copying subdirectories, copy them and their contents to new location. 
+            if (copySubDirs)
+            {
+                foreach (DirectoryInfo subdir in dirs)
+                {
+                    string temppath = Path.Combine(destDirName, subdir.Name);
+                    DirectoryCopy(subdir.FullName, temppath, copySubDirs);
+                }
+            }
         }
 
         private void CreateProjectPathIfNotExists()
