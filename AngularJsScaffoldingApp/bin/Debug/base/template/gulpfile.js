@@ -25,7 +25,7 @@ gulp.task('ngscripts', ['clean'], function() {
 gulp.task('libscripts', ['clean'], function() {
  gulp.src(
  	['node_modules/angular/angular.js',
- 	 'node_modules/angular-route/angular-route.js'])
+ 	 'node_modules/angular-ui-router/release/angular-ui-router.js'])
  .pipe(concat('lib.js'))
  .pipe(gulp.dest(bases.dist));
 });

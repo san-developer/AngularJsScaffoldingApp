@@ -2,15 +2,8 @@
 
 angular
   .module('app', [
-    'ngRoute',
+    'ui.router',
     'HomeConfigModule',
-  ]).config(function ($routeProvider) {
-  $routeProvider
-  .when('/', {
-    templateUrl: 'app/components/Home/Home.html',
-    controller: 'HomeController'
-  })
-  .otherwise({
-    redirectTo: '/'
-  });
+  ]).config(function ($urlRouterProvider) {
+   $urlRouterProvider.otherwise("/");
 });

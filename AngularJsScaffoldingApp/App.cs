@@ -14,7 +14,7 @@ namespace AngularJsScaffoldingApp
 {
     public partial class ScaffoldAngularJsApp : Form
     {
-        private string ProjectPath { get; set; }
+        private string ProjectPath { get { return Path.GetDirectoryName(txtProjectPath.Text + "\\"); } }
         public ScaffoldAngularJsApp()
         {
             InitializeComponent();
@@ -32,6 +32,8 @@ namespace AngularJsScaffoldingApp
         private void btnAddComponent_Click(object sender, EventArgs e)
         {
             CopyAndRenameBaseFilesInProjectFolder();
+
+            MessageBox.Show(txtComponentName.Text + " Component Successfully Added");
         }
 
         private void CopyAndRenameBaseFilesInProjectFolder()
@@ -137,13 +139,11 @@ namespace AngularJsScaffoldingApp
 
         private void CreateProjectPathIfNotExists()
         {
-            ProjectPath = Path.GetDirectoryName(txtProjectPath.Text + "\\");
             if (!Directory.Exists(ProjectPath))
             {
                 Directory.CreateDirectory(ProjectPath);
             }
         }
-
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
