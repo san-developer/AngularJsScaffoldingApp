@@ -42,8 +42,6 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-AngularJsScaffoldingApp/bin
+AngularJsScaffoldingApp/bin/
 AngularJsScaffoldingApp.v12.suo
-AngularJsScaffoldingApp/obj
-*.suo
 AngularJsScaffoldingApp/obj/
