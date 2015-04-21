@@ -7,3 +7,11 @@ D:\san\AngularJsScaffoldingApp\AngularJsScaffoldingApp\obj\Debug\AngularJsScaffo
 D:\san\AngularJsScaffoldingApp\AngularJsScaffoldingApp\obj\Debug\AngularJsScaffoldingApp.exe
 D:\san\AngularJsScaffoldingApp\AngularJsScaffoldingApp\obj\Debug\AngularJsScaffoldingApp.pdb
 D:\san\AngularJsScaffoldingApp\AngularJsScaffoldingApp\obj\Debug\AngularJsScaffoldingApp.ScaffoldAngularJsApp.resources
+C:\Programming\AngularJsScaffoldingApp\AngularJsScaffoldingApp\bin\Debug\AngularJsScaffoldingApp.exe.config
+C:\Programming\AngularJsScaffoldingApp\AngularJsScaffoldingApp\bin\Debug\AngularJsScaffoldingApp.exe
+C:\Programming\AngularJsScaffoldingApp\AngularJsScaffoldingApp\bin\Debug\AngularJsScaffoldingApp.pdb
+C:\Programming\AngularJsScaffoldingApp\AngularJsScaffoldingApp\obj\Debug\AngularJsScaffoldingApp.ScaffoldAngularJsApp.resources
+C:\Programming\AngularJsScaffoldingApp\AngularJsScaffoldingApp\obj\Debug\AngularJsScaffoldingApp.Properties.Resources.resources
+C:\Programming\AngularJsScaffoldingApp\AngularJsScaffoldingApp\obj\Debug\AngularJsScaffoldingApp.csproj.GenerateResource.Cache
+C:\Programming\AngularJsScaffoldingApp\AngularJsScaffoldingApp\obj\Debug\AngularJsScaffoldingApp.exe
+C:\Programming\AngularJsScaffoldingApp\AngularJsScaffoldingApp\obj\Debug\AngularJsScaffoldingApp.pdb
