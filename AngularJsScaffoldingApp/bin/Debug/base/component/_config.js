@@ -3,9 +3,9 @@ angular
   ['{{ComponentName}}ControllerModule'])
   .config(function ($stateProvider, $urlRouterProvider) {
 	 $stateProvider
-	  .state('{{ComponentName}}', {
-	    url : '/{{ComponentName}}',
-	    templateUrl: 'app/components/{{ComponentName}}/{{ComponentName}}.html',
+	  .state('{{ComponentState}}', {
+	      url: '/{{ComponentUrl}}',
+	    templateUrl: 'app/components/{{ComponentPath}}/{{ComponentName}}.html',
 	    controller: '{{ComponentName}}Controller'
 	  })
 });
