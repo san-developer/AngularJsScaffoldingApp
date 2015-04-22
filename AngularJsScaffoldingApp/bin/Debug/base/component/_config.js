@@ -3,7 +3,7 @@ angular
   ['{{ComponentName}}ControllerModule'])
   .config(function ($stateProvider, $urlRouterProvider) {
 	 $stateProvider
-	  .state('{{ComponentState}}', {
+	  .state('{{ComponentName}}', {
 	      url: '/{{ComponentUrl}}',
 	    templateUrl: 'app/components/{{ComponentPath}}/{{ComponentName}}.html',
 	    controller: '{{ComponentName}}Controller'
