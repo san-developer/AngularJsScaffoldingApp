@@ -38,7 +38,6 @@ namespace AngularJsScaffoldingApp
             MessageBox.Show(txtComponentName.Text + " Component Successfully Added");
         }
 
-
         private bool IfModuleAlreadyExists(string moduleName, string targetComponentpath)
         {
             return Directory.Exists(Path.Combine(targetComponentpath, moduleName));
@@ -55,7 +54,7 @@ namespace AngularJsScaffoldingApp
 
             var newComponentName = txtComponentName.Text;
             var targetComponentPath = Path.Combine(ProjectPath, "app", "components");
-        //    var targetNewComponentPath = Path.Combine(targetComponentPath, newComponentName);
+            //    var targetNewComponentPath = Path.Combine(targetComponentPath, newComponentName);
             var appTargetControllerPath = Path.Combine(ProjectPath, "app", "app.src.js");
 
 
@@ -77,7 +76,7 @@ namespace AngularJsScaffoldingApp
                 {
                     var currentNewModuleName = GetCurrentModuleName(ModuleArray, i);
 
-                    Replace(ModuleArray[i], "_config.src.js", configPath, Path.Combine(targetComponentPath, currentNewModuleName));
+                    Replace(currentNewModuleName, "_config.src.js", configPath, Path.Combine(targetComponentPath, currentNewModuleName), FormatMode.Path);
                     Replace(ModuleArray[i], ModuleArray[i] + ".html", baseHtmlPath, Path.Combine(targetComponentPath, currentNewModuleName));
                     Replace(ModuleArray[i], ModuleArray[i].ToLower() + "Controller.src.js", baseControllerPath, Path.Combine(targetComponentPath, currentNewModuleName));
 
@@ -113,13 +112,39 @@ namespace AngularJsScaffoldingApp
             return Path.Combine(Path.GetDirectoryName(Application.ExecutablePath), "base", "component");
         }
 
-        private void Replace(string newComponentName, string fileName, string filePath, string targetNewComponentPath)
+        private void Replace(string newComponentName, string fileName, string filePath, string targetNewComponentPath, FormatMode mode = FormatMode.Default)
         {
             var fileData = File.ReadAllText(filePath);
-            var replacedHtmlData = Regex.Replace(fileData, @"{{[\w\W]*?}}", m =>
+            var replacedHtmlData = String.Empty;
+            if (mode == FormatMode.Default)
             {
-                return newComponentName;
-            });
+                replacedHtmlData = Regex.Replace(fileData, @"{{[\w\W]*?}}", m =>
+               {
+                   return newComponentName;
+               });
+            }
+
+            if (mode == FormatMode.Path)
+            {
+                newComponentName = newComponentName.Replace('\\', '/');
+                replacedHtmlData = Regex.Replace(fileData, @"{{ComponentState}}", m =>
+                {
+                    return newComponentName.Replace('/', '.').Replace('\\', '.');
+                });
+                replacedHtmlData = Regex.Replace(replacedHtmlData, @"{{ComponentUrl}}", m =>
+                {
+                    return newComponentName;
+                });
+                replacedHtmlData = Regex.Replace(replacedHtmlData, @"{{ComponentPath}}", m =>
+                {
+                    return newComponentName;
+                });
+                replacedHtmlData = Regex.Replace(replacedHtmlData, @"{{ComponentName}}", m =>
+                {
+                    var arr = newComponentName.Split('/');
+                    return arr.Length > 0 ? arr[arr.Length - 1] : newComponentName;
+                });
+            }
 
             if (!Directory.Exists(targetNewComponentPath))
             {
@@ -196,5 +221,11 @@ namespace AngularJsScaffoldingApp
         //    Assert.Equal("aaa", GetCurrentModuleName(new string[] { "San", "dro", "mchedli", "shvili" }, 1));
         //}
 
+    }
+
+    public enum FormatMode
+    {
+        Default = 0,
+        Path = 1
     }
 }

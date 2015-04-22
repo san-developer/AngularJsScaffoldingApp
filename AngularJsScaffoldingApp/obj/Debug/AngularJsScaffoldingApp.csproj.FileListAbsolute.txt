@@ -26,3 +26,14 @@ D:\san\AngularJsScaffoldingApp\AngularJsScaffoldingApp\bin\Debug\xunit.assert.pd
 D:\san\AngularJsScaffoldingApp\AngularJsScaffoldingApp\bin\Debug\xunit.assert.xml
 D:\san\AngularJsScaffoldingApp\AngularJsScaffoldingApp\bin\Debug\xunit.core.pdb
 D:\san\AngularJsScaffoldingApp\AngularJsScaffoldingApp\bin\Debug\xunit.core.xml
+C:\Programming\AngularJsScaffoldingApp\AngularJsScaffoldingApp\bin\Debug\xunit.abstractions.dll
+C:\Programming\AngularJsScaffoldingApp\AngularJsScaffoldingApp\bin\Debug\xunit.runner.visualstudio.testadapter.dll
+C:\Programming\AngularJsScaffoldingApp\AngularJsScaffoldingApp\bin\Debug\xunit.runner.utility.desktop.dll
+C:\Programming\AngularJsScaffoldingApp\AngularJsScaffoldingApp\bin\Debug\xunit.execution.desktop.dll
+C:\Programming\AngularJsScaffoldingApp\AngularJsScaffoldingApp\bin\Debug\xunit.assert.dll
+C:\Programming\AngularJsScaffoldingApp\AngularJsScaffoldingApp\bin\Debug\xunit.core.dll
+C:\Programming\AngularJsScaffoldingApp\AngularJsScaffoldingApp\bin\Debug\xunit.assert.pdb
+C:\Programming\AngularJsScaffoldingApp\AngularJsScaffoldingApp\bin\Debug\xunit.assert.xml
+C:\Programming\AngularJsScaffoldingApp\AngularJsScaffoldingApp\bin\Debug\xunit.core.pdb
+C:\Programming\AngularJsScaffoldingApp\AngularJsScaffoldingApp\bin\Debug\xunit.core.xml
+C:\Programming\AngularJsScaffoldingApp\AngularJsScaffoldingApp\obj\Debug\AngularJsScaffoldingApp.csprojResolveAssemblyReference.cache
